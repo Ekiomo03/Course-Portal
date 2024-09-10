@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: relative;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.menu-content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #333;
+    color: white;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+}
+
+.menu-content a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.menu-content a:hover {
+    background-color: #575757;
+}
+
+#menu-toggle:checked + .menu-icon + .menu-content {
+    display: flex;
+}
